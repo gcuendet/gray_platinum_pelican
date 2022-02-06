@@ -27,3 +27,8 @@ sudo sh cmake.sh --prefix=/usr/local/ --exclude-subdir
 cmake -S. -Bbuild
 cmake --build build
 ```
+
+If tests are enabled (they are by default), run the unit tests with:
+```
+cmake --build build --target test
+```
