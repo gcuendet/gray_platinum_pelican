@@ -1,1 +1,1 @@
-add_subdirectory("largest_three")
+add_subdirectory("largestProdOfThree")

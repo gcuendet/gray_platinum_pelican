@@ -1,5 +1,5 @@
-#include <questions/largest_three/sort_method.hpp>
-#include <questions/largest_three/common.hpp>
+#include <questions/largestProdOfThree/sort_method.hpp>
+#include <questions/largestProdOfThree/common.hpp>
 
 #include <algorithm>
 #include <iostream>

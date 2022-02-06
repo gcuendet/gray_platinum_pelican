@@ -1,1 +1,1 @@
-add_subdirectory("largest_prod")
+add_subdirectory("largestProdOfThreeApp")

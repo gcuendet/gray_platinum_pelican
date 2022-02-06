@@ -9,7 +9,7 @@ add_executable(
 
 target_link_libraries(
     ${tests_name}
-    gpp::largest_three
+    gpp::${lib_name}
     gtest_main
 )
 

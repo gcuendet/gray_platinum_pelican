@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include <questions/largest_three/sort_method.hpp>
+#include <questions/largestProdOfThree/sort_method.hpp>
 
 #include <vector>
 

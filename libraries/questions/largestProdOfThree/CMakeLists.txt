@@ -1,4 +1,4 @@
-set(lib_name "largest_three")
+set(lib_name "largestProdOfThree")
 
 add_library(${lib_name})
 add_library(gpp::${lib_name} ALIAS ${lib_name})
