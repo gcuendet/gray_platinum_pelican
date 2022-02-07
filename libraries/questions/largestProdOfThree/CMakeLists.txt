@@ -7,5 +7,9 @@ add_subdirectory("src")
 target_include_directories(${lib_name} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 if (${WITH_TESTS})
-    add_subdirectory("tests")
+    add_subdirectory("tests/units")
+endif()
+
+if (${WITH_BENCHMARKS})
+    add_subdirectory("tests/benchmarks")
 endif()

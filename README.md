@@ -24,7 +24,7 @@ sudo sh cmake.sh --prefix=/usr/local/ --exclude-subdir
 ## Build
 
 ```
-cmake -S. -Bbuild
+cmake -S. -Bbuild [-DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=Release]
 cmake --build build
 ```
 
