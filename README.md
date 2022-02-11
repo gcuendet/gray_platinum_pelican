@@ -9,7 +9,7 @@ The name was generated on [the code name generator](https://www.codenamegenerato
 
 In order to be able to build the content of this repo, you'll need:
 
-- A C++ compiler (tested with apple clang 12 on macOS and GCC 9.3 on Ubuntu)
+- A C++ compiler (tested with apple clang 12 on macOS and GCC 9.3 and clang 14 on Ubuntu)
 - Git (used to fetch dependencies)
 - CMake >=3.17
 
@@ -26,8 +26,11 @@ sudo sh cmake.sh --prefix=/usr/local/ --exclude-subdir
 ## Build
 
 ```
-cmake -S. -Bbuild [-DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=Release]
-cmake --build build
+cmake -S. -Bbuild \
+    [-DBUILD_SHARED_LIBS=ON] \
+    [-DCMAKE_BUILD_TYPE=Release] \
+    [-DCMAKE_CXX_COMPILER=/usr/lib/llvm-14/bin/clang++]
+cmake --build build [-j16]
 ```
 
 If tests are enabled (they are by default), run the unit tests with:
